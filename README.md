@@ -18,10 +18,10 @@ The user has to draw on a canva and will get predictions of the numbers with a c
 
 ## Model Summary
 
-| Model | Architecture | Accuracy | Parameters | Inference Time |
-|-------|--------------|----------|------------|----------------|
-| **MLP** | 784 → 512 → 512 → 10 | XX.XX% | ~660,000 | ~XXms |
-| **CNN** | 2xConv32 → Pool → 2xConv64 → Pool → Dense | XX.XX% | ~140,000 | ~XXms |
+| Model | Architecture | Accuracy | Parameters | Training Time | Inference Time |
+|-------|--------------|----------|------------|---------------|----------------|
+| **MLP** | 784 → 512 → 512 → 10 | 96.84% | ~660,000 | ~51s | ~15ms |
+| **CNN** | 2xConv32 → Pool → 2xConv64 → Pool → Dense | 99.00% | ~140,000 | ~604s | ~20ms |
 
 ## How it works
 
@@ -66,6 +66,7 @@ The user has to draw on a canva and will get predictions of the numbers with a c
 
 CNN is the superior architecture for image classification due to its 2.16% higher accuracy despite longer training time.
 The convolutional layers effectively capture spatial patterns in handwritten digits.
+
 
 
 
